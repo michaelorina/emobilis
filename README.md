@@ -12,7 +12,7 @@ Navigate to the specific course folder to access course materials, including vid
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/michaelorina/emobilis.git
    ```
 
 2. **Explore Folders:**
