@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         form{
             width: 30%;
@@ -40,6 +41,26 @@
             background: #884404; 
         }
 
+        .input-icons i {
+            position: absolute;
+        }
+         
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+         
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+         
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
         @media screen and (max-width:600px){
             form{
                 width: 90%;
@@ -59,22 +80,27 @@
     <form action="">
         <div>
             <label for="">Names</label>
+            <i class="fa fa-user icon"></i>
             <input type="text" required minlength="6" placeholder="John Doe">
         </div>
         <div>
             <label for="">Email</label>
+            <i class="fa fa-envelope" icon></i>
             <input type="email" placeholder="john.doe2@gmail.com">
         </div>
         <div>
             <label for="">DOB</label>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
             <input type="date">
         </div>
         <div>
             <label for="">Password</label>
+            <i class="fa fa-lock" aria-hidden="true"></i>
             <input type="password">
         </div>
         <div>
             <label for="">Weight</label>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
             <input type="number">
         </div>
         
