@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        form{
+            width: 30%;
+            margin: auto;
+            box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+            padding: 25px 16px;
+            font-family: 'Raleway', sans-serif;
+        }
+        input{
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #7c3e03;
+        }
+        input:focus{
+            outline: none;
+            border: 2px solid #532b06;
+        }
+
+        button{
+            width: 100%;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background: #c26004;
+            color: whitesmoke;
+            border: none;
+            transition: background 0.4s ease-in;
+        }
+        button:hover{
+            background: #884404; 
+        }
+
+        @media screen and (max-width:600px){
+            form{
+                width: 90%;
+            }
+        }
+        @media screen and (601px <= width <= 800px){
+            form{
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Name, email, dob, password, weight -->
+
+    <form action="">
+        <div>
+            <label for="">Names</label>
+            <input type="text" required minlength="6" placeholder="John Doe">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" placeholder="john.doe2@gmail.com">
+        </div>
+        <div>
+            <label for="">DOB</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password">
+        </div>
+        <div>
+            <label for="">Weight</label>
+            <input type="number">
+        </div>
+        
+        <button>Submit</button>
+    </form>
+</body>
+</html>
