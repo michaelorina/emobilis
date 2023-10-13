@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'Poppins', serif;
+        }
+
+        :root{
+            --bg-color: #e7eafb;
+            --primary: #01a29c;
+            --hover: #008170;
+
+            --h1-font: 2.2rem;
+            --h2-font: 1.1rem;
+            --p-font: 0.9rem;
+
+            --m-1: 0.4rem;
+            --m-4: 2rem;
+        }
+
+        body{
+            background: #1c2834;
+            color: white;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-color);
+            padding: 18px 100px;
+        }
+
+        .logo{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .nav{
+            display: flex;
+        }
+
+        .nav a{
+            font-size: 1rem;
+            padding: 10px 20px;
+            color: #222435;
+            font-weight: 500;
+            transition: 0.4s;
+        }
+
+        .nav a:hover{
+            background: var(--primary);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Michael</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello Bruv! Am Michael innit!</h1>
+            <h2>A fullstack developer innit!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium error vero. Ad, nulla voluptatem repellat, quisquam accusamus temporibus eius deleniti nisi perspiciatis totam, sit culpa voluptatibus reprehenderit dolores recusandae?</p>
+            <a href="#" class="cta-btn">Contact Me</a>
+        </div>
+        <div class="hero-image">
+
+        </div>
+    </section>
+</body>
+</html>
