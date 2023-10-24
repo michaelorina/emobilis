@@ -21,3 +21,6 @@ print(sentence.capitalize())
 print(name.swapcase())
 print(sentence)
 print(sentence.strip())
+
+results = sentence.replace("functions", "methods").strip().upper()
+print(results)
