@@ -15,3 +15,21 @@ car = {
 friends = {"Mike", "Walid", "Ahmed", "John", "Mike", "Walid"} #unique elements
 
 workers = ("Jane", "Jack", "Jim") #never change it programmatically
+
+print(cities)
+print(car)
+print(friends)
+print(workers)
+
+print(cities[0])
+print(cities[-1])
+
+print(car["model"])
+print(car["color"])
+
+# loop
+for city in cities:     # for each city in cities
+    print(city)
+
+for key, value in car.items():
+    print(key, value)
