@@ -19,6 +19,22 @@ class Account:
         return f"name: {self.acc_name}, accNO: {self.acc_number}, balance {self.acc_number}"
 
 
+class DollarAccounts(Account):
+    def rates(self):
+        return 153.89
+
+    def deposit(self, amount):
+        usd = amount / self.rates()
+        self.acc_balance += usd
+
+
+dc1 = DollarAccounts("Mike", "d-004", 4500)
+dc1.withdraw(500)
+print(dc1.acc_balance)
+print(dc1.rates())
+dc1.deposit(20000)
+print(dc1.acc_balance)
+
 acc1 = Account("Michael", "001", 13000)
 acc1.deposit(5000)
 print(acc1.acc_balance)
