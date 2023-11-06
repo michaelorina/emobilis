@@ -20,3 +20,8 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+# tables
+# user
+
+# admin, admin@gmail.com, 123456
