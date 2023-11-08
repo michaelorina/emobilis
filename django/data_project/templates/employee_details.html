@@ -24,6 +24,8 @@
                         <p class="card-text">Born on {{ employee.dob }}</p>
                         <p class="card-text">Address is {{ employee.email }}</p>
                         <p class="card-text">Added  {{ employee.created_at | naturaltime }}</p>
+
+                        <a href="{% url 'delete' employee.id %}" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>

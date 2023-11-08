@@ -1,5 +1,5 @@
 import json
-import os.path
+import os
 
 from django.core.management import BaseCommand
 
@@ -8,7 +8,7 @@ from main_app.models import Employee
 
 
 class Command(BaseCommand):
-    help = " Populate employees table with 1000 records "
+    help = "Populate employees table with 1000 records"
 
     def handle(self, *args, **options):
         path = os.path.join(settings.BASE_DIR, "employees.json")
