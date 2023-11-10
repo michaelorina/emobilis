@@ -9,6 +9,7 @@
 	<div class="container">
     <div class="row justify-content-center">
         <div class="col-sm-5">
+            {% include 'alerts.html' %}
             <div class="card">
                 {% if employee.profile %}
                     <img src="{{ employee.profile.url }}" alt="" class="card-img-top">

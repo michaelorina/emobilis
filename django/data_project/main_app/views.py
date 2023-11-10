@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from django.contrib import messages
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, redirect, get_object_or_404
@@ -14,6 +15,7 @@ def home(request):
         form = EmployeeForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.info(request, "Employee was saved successfully")
             return redirect("home")
 
     else:
@@ -44,6 +46,7 @@ def employee_details(request, emp_id):
 def employee_delete(request, emp_id):
     employee = get_object_or_404(Employee, pk=emp_id)
     employee.delete()
+    messages.error(request, "This employee was deleted permanently")
     return redirect("all")
 
 
@@ -62,6 +65,7 @@ def employee_update(request, emp_id):
         form = EmployeeForm(request.POST, request.FILES, instance=employee)
         if form.is_valid():
             form.save()
+            messages.success(request, "Employee updated successfully")
             return redirect('details', emp_id)
     else:
         form = EmployeeForm(instance=employee)
