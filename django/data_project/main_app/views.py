@@ -70,3 +70,11 @@ def employee_update(request, emp_id):
     else:
         form = EmployeeForm(instance=employee)
     return render(request, "update.html", {"form": form})
+
+
+def signin(request):
+    return None
+
+
+def signout(request):
+    return None
