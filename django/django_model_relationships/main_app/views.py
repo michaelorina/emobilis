@@ -28,3 +28,23 @@ def show(request):
     song.album.artists.all()
 
     return HttpResponse("Check the results on the console")
+
+
+def save_or_fetch_artist(request):
+    return None
+
+
+def fetch_one_artist(request):
+    return None
+
+
+def delete_artist(request):
+    return None
+
+
+def albums_for_artist(request):
+    return None
+
+
+def update_artist(request):
+    return None
