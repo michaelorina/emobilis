@@ -1,0 +1,61 @@
+INFO 2023-11-17 08:09:15,945  8879  Watching for file changes with StatReloader
+INFO 2023-11-17 08:13:35,650  8879  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:13:35,984  9012  Watching for file changes with StatReloader
+INFO 2023-11-17 08:13:45,155  9012  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:13:45,516  9028  Watching for file changes with StatReloader
+INFO 2023-11-17 08:14:00,730  9028  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:14:01,070  9041  Watching for file changes with StatReloader
+INFO 2023-11-17 08:15:06,087  9041  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:15:06,443  9075  Watching for file changes with StatReloader
+INFO 2023-11-17 08:15:22,654  9075  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:15:23,011  9095  Watching for file changes with StatReloader
+INFO 2023-11-17 08:15:34,884  9095  +1 (745) 512-8875 234
+INFO 2023-11-17 08:16:28,267  9095  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:16:28,622  9162  Watching for file changes with StatReloader
+INFO 2023-11-17 08:16:38,858  9162  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:16:39,206  9178  Watching for file changes with StatReloader
+INFO 2023-11-17 08:16:55,569  9178  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:16:55,928  9185  Watching for file changes with StatReloader
+INFO 2023-11-17 08:17:17,719  9185  +1 (542) 757-3927 34
+DEBUG 2023-11-17 08:17:17,719  9185  +1 (542) 757-3927 34
+ERROR 2023-11-17 08:17:17,719  9185  +1 (542) 757-3927 34
+INFO 2023-11-17 08:24:09,990  9185  /home/maestro/Documents/emobilis/django/daraja_apis/daraja_apis/settings.py changed, reloading.
+INFO 2023-11-17 08:24:10,329  9550  Watching for file changes with StatReloader
+INFO 2023-11-17 08:24:34,809  9550  /home/maestro/Documents/emobilis/django/daraja_apis/daraja_apis/settings.py changed, reloading.
+INFO 2023-11-17 08:24:35,174  9564  Watching for file changes with StatReloader
+INFO 2023-11-17 08:24:45,425  9564  /home/maestro/Documents/emobilis/django/daraja_apis/daraja_apis/settings.py changed, reloading.
+INFO 2023-11-17 08:24:45,820  9580  Watching for file changes with StatReloader
+INFO 2023-11-17 08:30:59,507  9580  /home/maestro/Documents/emobilis/django/daraja_apis/daraja_apis/settings.py changed, reloading.
+INFO 2023-11-17 08:30:59,855  9877  Watching for file changes with StatReloader
+INFO 2023-11-17 08:35:41,906  9877  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:35:42,334  10100  Watching for file changes with StatReloader
+INFO 2023-11-17 08:36:09,823  10100  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:36:10,195  10134  Watching for file changes with StatReloader
+INFO 2023-11-17 08:36:27,610  10134  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:36:27,974  10161  Watching for file changes with StatReloader
+INFO 2023-11-17 08:36:40,265  10161  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:36:40,617  10173  Watching for file changes with StatReloader
+INFO 2023-11-17 08:43:17,850  10173  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:43:18,247  10442  Watching for file changes with StatReloader
+INFO 2023-11-17 08:43:29,555  10442  254758355646 1
+DEBUG 2023-11-17 08:43:29,557  10442  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-11-17 08:43:30,559  10442  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-11-17 08:43:30,580  10442  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-11-17 08:43:31,851  10442  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-11-17 08:43:31,852  10442  {'MerchantRequestID': '85308-139559502-1', 'CheckoutRequestID': 'ws_CO_27112023114738064758355646', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-11-17 08:45:36,920  10442  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 08:45:37,297  10561  Watching for file changes with StatReloader
+INFO 2023-11-17 09:00:18,843  10561  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:00:19,209  11168  Watching for file changes with StatReloader
+INFO 2023-11-17 09:00:39,690  11168  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:00:40,067  11191  Watching for file changes with StatReloader
+INFO 2023-11-17 09:03:07,149  11191  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:03:07,531  11357  Watching for file changes with StatReloader
+INFO 2023-11-17 09:06:08,475  11357  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:06:08,862  11541  Watching for file changes with StatReloader
+INFO 2023-11-17 09:06:54,627  11541  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:06:55,016  11592  Watching for file changes with StatReloader
+INFO 2023-11-17 09:09:29,848  11592  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:09:30,194  11737  Watching for file changes with StatReloader
+WARNING 2023-11-17 09:16:32,671  11737  Not Found: /favicon.ico
+WARNING 2023-11-17 09:17:21,988  11737  Not Found: /favicon.ico

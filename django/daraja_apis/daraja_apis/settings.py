@@ -25,8 +25,33 @@ SECRET_KEY = 'django-insecure-e&*z_dbpi%7mf9ee&7n_j3z5%d5x!@w6qxip+7kfae-eet3u29
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime}  {process:d}  {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'newfile': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': './loggers.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['newfile'],
+            'propagate': True,
+        },
+    },
+}
 
 # Application definition
 
@@ -123,3 +148,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MPESA_API = {
+    "BIZ_SHORT_CODE": "174379",
+    "CALLBACK_URL": "https://c0aa-105-161-101-45.ngrok-free.app/callback",
+    "CONSUMER_KEY": "SKEqe9YrPPuA1Al3oun1pnxcETLQil3E",
+    "CONSUMER_SECRET": "qgTa9UafCyoZyvcB",
+    "CREDENTIALS_URL": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials",
+    "PAYMENT_URL": "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
+    "PASS_KEY": "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
+}
