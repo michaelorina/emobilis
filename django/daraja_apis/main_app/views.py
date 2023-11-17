@@ -9,9 +9,12 @@ from django.views.decorators.csrf import csrf_exempt
 from main_app import mpesa
 
 logger = logging.getLogger(__name__)
+
+
 # Create your views here.
 
 
+@csrf_exempt
 def initiate_payment(request):
     if request.method == "POST":
         phone = request.POST["phone"]
@@ -37,22 +40,26 @@ def initiate_payment(request):
         resp = requests.post(mpesa.get_payment_url(), json=data, headers=headers)
         logger.debug(resp.json())
         json_resp = resp.json()
-        code = json_resp["ResponseCode"]
-        if code == "0":
-            mid = json_resp["MerchantRequestID"]
-            cid = json_resp["CheckoutRequestID"]
-            logger.info(f"{mid} {cid}")
-        else:
-            logger.error(f"Error while initiating stk push {code}")
+        if "ResponseCode" in json_resp:
+            code = json_resp["ResponseCode"]
+            if code == "0":
+                mid = json_resp["MerchantRequestID"]
+                cid = json_resp["CheckoutRequestID"]
+                logger.info(f"{mid} {cid}")
+            else:
+                logger.error(f"Error while initiating stk push {code}")
+        elif "errorCode" in json_resp:
+            errorCode = json_resp["errorCode"]
+            logger.error(f"Error with error code {errorCode}")
 
     return render(request, "payment.html")
 
+
 @csrf_exempt
 def callback(request):
-    result = json.loads(request.data)
+    result = json.loads(request.body)
     mid = result["Body"]["stkCallback"]["MerchantRequestID"]
     cid = result["Body"]["stkCallback"]["CheckoutRequestID"]
     code = result["Body"]["stkCallback"]["ResultCode"]
     logger.info(f"From Callback Result {mid} {cid} {code}")
     return HttpResponse({"message": "Successfully received"})
-

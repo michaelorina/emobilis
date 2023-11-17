@@ -59,3 +59,17 @@ INFO 2023-11-17 09:09:29,848  11592  /home/maestro/Documents/emobilis/django/dar
 INFO 2023-11-17 09:09:30,194  11737  Watching for file changes with StatReloader
 WARNING 2023-11-17 09:16:32,671  11737  Not Found: /favicon.ico
 WARNING 2023-11-17 09:17:21,988  11737  Not Found: /favicon.ico
+INFO 2023-11-17 09:20:35,415  11737  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:20:35,818  12845  Watching for file changes with StatReloader
+INFO 2023-11-17 09:21:53,130  12845  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:21:53,492  12910  Watching for file changes with StatReloader
+INFO 2023-11-17 09:22:48,490  12910  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:22:48,861  12952  Watching for file changes with StatReloader
+INFO 2023-11-17 09:23:13,472  12952  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:23:13,819  12991  Watching for file changes with StatReloader
+INFO 2023-11-17 09:23:36,321  12991  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:23:36,660  13013  Watching for file changes with StatReloader
+INFO 2023-11-17 09:28:14,678  13013  /home/maestro/Documents/emobilis/django/daraja_apis/daraja_apis/settings.py changed, reloading.
+INFO 2023-11-17 09:28:15,049  13405  Watching for file changes with StatReloader
+INFO 2023-11-17 09:34:18,564  13405  /home/maestro/Documents/emobilis/django/daraja_apis/main_app/views.py changed, reloading.
+INFO 2023-11-17 09:34:18,909  13670  Watching for file changes with StatReloader

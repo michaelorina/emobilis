@@ -151,7 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MPESA_API = {
     "BIZ_SHORT_CODE": "174379",
-    "CALLBACK_URL": "https://c0aa-105-161-101-45.ngrok-free.app/callback",
+    "CALLBACK_URL": "https://3715-41-79-10-206.ngrok-free.app/callback",
     "CONSUMER_KEY": "SKEqe9YrPPuA1Al3oun1pnxcETLQil3E",
     "CONSUMER_SECRET": "qgTa9UafCyoZyvcB",
     "CREDENTIALS_URL": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials",
